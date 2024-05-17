@@ -11,7 +11,6 @@ jobs:
         file_name: config-infra-prod.yml
   test-terraform-state-deployment:
     needs: get-config
-    uses: actions/checkout
     uses: VinzGue/mlops-v2-gha-demo/tf-gha-install-terraform.yml@main
     with:
       TFAction: 'apply'
